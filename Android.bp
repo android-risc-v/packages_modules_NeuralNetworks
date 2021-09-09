@@ -58,6 +58,11 @@ cc_defaults {
                       "-Xclang", "-fnative-half-type",
                       "-Xclang", "-fallow-half-arguments-and-returns" ],
         },
+        riscv64: {
+            cflags: [ "-D_Float16=__fp16",
+                      "-Xclang", "-fnative-half-type",
+                      "-Xclang", "-fallow-half-arguments-and-returns" ],
+        },
     },
 }
 
